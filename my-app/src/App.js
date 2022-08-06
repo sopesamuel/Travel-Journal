@@ -6,10 +6,11 @@ import Travel from "./Components/Travel"
 function App(){
   const travel = Data.map( lists =>{
 return (
-  <div>
+  <div >
   <Travel 
      list = {lists}
   />
+  <hr className="hr-tag"></hr>
   </div>
 )
   }
@@ -17,7 +18,7 @@ return (
     return(
       <div>
         <Navbar />
-      {travel}
+        {travel}
       </div>
 
     )
